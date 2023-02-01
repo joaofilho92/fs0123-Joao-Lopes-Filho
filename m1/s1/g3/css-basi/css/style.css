@@ -1,0 +1,24 @@
+/*
+Questo è un commento 
+*/
+
+/*
+selletore {
+    proprietà/regola : valore ;
+    proprietà/regola : valore ;
+    proprietà/regola : valore ;
+}
+*/
+
+div {
+    color: red;
+    background-color: blue;
+}
+
+div span {
+    color: white;
+}
+
+div, span{
+    border: 1px solid black;
+}
