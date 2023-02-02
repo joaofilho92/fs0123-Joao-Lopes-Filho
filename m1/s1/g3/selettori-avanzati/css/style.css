@@ -1,0 +1,22 @@
+section > span{
+    text-decoration: line-through;
+}
+
+section + small{
+    font-weight: bold;
+}
+
+section ~ small{ /*Tutti gli small dopo una section*/  
+    color: red;
+}
+
+#toggle{
+    display: none;
+}
+
+#menu{
+    background-color: bisque;
+    height: 0;
+    overflow: hidden;
+    
+}

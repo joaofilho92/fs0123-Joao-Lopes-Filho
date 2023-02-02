@@ -1,0 +1,9 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#q1{
+    background-image: url(../img/HTML5_logo_and_wordmark.svg.png);
+}
