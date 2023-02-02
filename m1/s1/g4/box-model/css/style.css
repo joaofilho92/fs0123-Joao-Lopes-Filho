@@ -1,0 +1,33 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    overflow: auto;
+}
+
+.max{
+    max-width: 600px;
+    background-color: blue;
+    height: 10px;
+}
+
+/* area di padding */
+
+.padding{
+    padding: 15px; /* tutti il lado */
+    /*padding-top: 15px */
+    /*padding-left: 15px */
+    /*padding-right: 15px */
+    /*padding-bottom: 15px */
+
+    box-sizing: border-box; /*faccio si che il padding sia ritagliado all'interno */
+} 
+
+/* area dei border */
+
+.border{
+    border: 1px solid black;
+    border-top-left-radius: 100%;
+}
+
+/* area dei margin*/

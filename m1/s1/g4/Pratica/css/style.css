@@ -1,0 +1,37 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    background: url(../img/sfondo.png);
+}
+header, main, footer{
+    margin: 1rem;
+}
+
+/* HEADER */
+header{
+    background: rgb(4, 97, 126);
+    padding: 1rem 0;
+    text-align: center;
+}
+header div#logo{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+header p{
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+    font-weight 
+}
+
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
