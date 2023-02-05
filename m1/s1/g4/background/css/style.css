@@ -6,4 +6,22 @@
 
 #q1{
     background-image: url(../img/HTML5_logo_and_wordmark.svg.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#q2{
+    background-image: url(../img/HTML5_logo_and_wordmark.svg.png), url(../img/HTML5_logo_and_wordmark.svg.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat, repeat-y;
+    background-position: right bottom, left bottom;
+}
+
+#q3{
+    background-image: url(https://picsum.photos/700/300/?blur=5);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
