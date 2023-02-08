@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="frutto" onchange="sceglifrutto()">
+        <option value="">--scegli--</option>
+        <option value="mela">Mela</option>
+        <option value="pera">Pera</option>
+        <option value="ananas">Ananas</option>
+        <option value="mango">Mango</option>
+        <option value="kiwi">Kiwi</option>
+    </select>
+
+    <div id="messagio"></div>    
+
+
+    <script>
+
+        function sceglifrutto(){
+            let frutto = document.getElementById('frutto').value;
+            let messagio = document.getElementById('messagio');
+
+
+            
+        if(frutto == 'mela'){
+            messagio.textContent = 'Le mele costano 1euro'
+        } else if(fruto == 'pera'){
+            messagio.textContent ='Le Pera costano 0.99euro'
+        } else if(fruto == 'ananas' || fruto == 'Mango'){
+            messagio.textContent ='Ananas e Mango costano 3.90euro'
+        } else{
+            messagio.textContent ='Non abbiano' + frutto
+        }
+
+    }
+
+
+    </script>
+</body>
+</html>

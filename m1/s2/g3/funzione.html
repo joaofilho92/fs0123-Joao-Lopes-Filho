@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        saluto();
+
+        function saluto(){
+            console.log('ciao');
+        }
+
+        saluto();
+
+        function restituisceSaluto (){
+            return 'ciao'; //restituisce la stringa 
+            //ci vuole un solo return per funzione
+            //
+        }
+
+        console.log(restituisceSaluto())
+
+        let stringa = restituisceSaluto();
+
+
+        //scope nella funzione
+
+        let a = 0
+        
+        function scope(){
+            console.log('let a = ' + a); // a è raggiungibile perchè globalement
+            b = 100;
+        }
+
+        scope();
+        //console.log(b) // b nasce dentro de la funzione, non è raggiungibile dall'esterno
+
+
+        //Funzione parametriche
+
+        function soma(a,b){
+            console.log(a + b);
+        }
+
+        soma(2,6)
+        soma(5,6)
+
+        function restituisci_soma(a,b){
+            return a + b;
+        }
+
+        console.log(restituisci_soma(3,9));
+
+        //Closure
+
+        function funzione1(){
+            let a = 100;
+
+            function funzione2(){ // Non posso usarla fuori da funzione1
+                console.log(a + x);
+                let x = 3;
+            }
+
+                //x non è raggiungibile
+                funzione2()
+
+        }
+
+        funzione1();
+
+    </script>
+
+</body>
+</html>
