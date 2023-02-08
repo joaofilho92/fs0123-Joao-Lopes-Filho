@@ -12,38 +12,66 @@
 
     <script>
 
-        let obj0ld = new Object(); // sconsigliato
-        let obj = {}; //si usa questo
+        {
 
-        let pizza = {
-            gusto: 'Margherita',
-            prezzo: 5
-            mostraPrezzo: function(){
-                console.log('La pizza ${this.gusto} costa ${this.prezzo} Euro');
+            let obj0ld = new Object(); // sconsigliato
+            let obj = {}; //si usa questo
+
+            let pizza = {
+                gusto: 'Margherita',
+                prezzo: 5
+                mostraPrezzo: function(){
+                    console.log('La pizza ${this.gusto} costa ${this.prezzo} Euro');
+                }
             }
+
+            console.table(pizza)
+            document.write(pizza)
+            document.write(pizza.gusto)
+            
+
+            //lettura di una proprietà 
+
+            console.log(pizza.gusto);
+            console.log(pizza.prezzo);
+
+            //scrittura 
+            console.log(pizza.gusto);
+
+            pizza.gusto = 'Diavola'
+            console.log(pizza.prezzo);
+
+            // utilizo dei metodi
+
+            pizza.mostraPrezzo()
+
+            //mostraPrezzo() // La funzione non esiste 
+
         }
 
-        console.table(pizza)
-        document.write(pizza)
-        document.write(pizza.gusto)
-        
+        {   //Construtore
 
-        //lettura di una proprietà 
+            function Pizza(){
+                this.gusto = 'Margherita'
+                this.prezzo = 5;
+                this.mostraPrezzo =  function(){
+                    console.log('La Pizza ${this.gusto} costa ${this.prezzo} Euro');
+            }
+        }
+        }
 
-        console.log(pizza.gusto);
-        console.log(pizza.prezzo);
+        {
+            let margherita = new Pizza('margherita',5);
+            let diavola = new Pizza('Diavola',1);
 
-        //scrittura 
-        console.log(pizza.gusto);
 
-        pizza.gusto = 'Diavola'
-        console.log(pizza.prezzo);
+            console.log(margherita);
 
-        // utilizo dei metodi
 
-        pizza.mostraPrezzo()
 
-        //mostraPrezzo() // La funzione non esiste 
+
+        }
+
 
     </script>
     
