@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // con variabile incrementata
+        for(let i = 0; i < 10; i++){
+            document.write(i);
+        }
+
+        document.write('<hr>');
+
+        // con variabile decrementata
+        for(let i = 0; i >= 0; i--){
+            document.write(`<div>${i}</div>`);
+        }
+    
+        document.write('<hr>');
+
+        let pizze = ['Margherita', 'Diavola', 'Marinara'];
+        for(let i = 0; i < pizze.length; i++){
+
+            document.write(`<div>${pizze[i]}</div>`);
+        }
+
+        document.write('<hr>');
+
+        //for of 
+
+        pizze = ['Margherita', 'Diavola', 'Marinara'];
+        for(let pizza of pizze){
+            document.write(`<div>${pizza}</div>`);
+        }
+
+        for(let lettera of 'testo'){
+            document.write( lettera + '-');
+        }
+
+        document.write('<hr>');
+
+        //for in
+        let margherita = {
+            gusto: 'Margherita',
+            prezzo: 5,
+            metodo : function(){}
+        }
+
+        let campiVisualizzati = ['gusto', 'prezzo'];
+
+        for(let prop in margherita){
+
+            if(campiVisualizzati.includes(prop)){
+            document.write(`<div>${prop} : ${margherita[prop]}</div>`);
+        }
+    }
+
+    </script>
+</body>
+</html>

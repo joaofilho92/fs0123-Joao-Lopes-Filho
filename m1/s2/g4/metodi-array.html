@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+
+    let pizze = ['Margherita', 'Diavola', 'Marinara'];
+
+    console.log(pizze);
+    //si usa quando dobbiamo effetuare una modifica ad ogni elemento dell'array
+    let pizzaDiv = pizze.map(function(){
+        return `<div>${valore}</div>`;
+    })
+
+    console.log(pizzaDiv);
+
+    // Serve a ciclare gli array
+    pizze.forEach(function(valore){
+        document.write(valore)
+    })
+
+
+    /*MAP*/
+
+    let numeri = [1,2,3,4,5,6];
+
+    console.log(numeri.map(function(n){
+        return n * 2
+    }));
+        console.log(numerix2);
+
+
+    //Filter 
+
+    //Restituisce un array con tutti i resultati trivati 
+    let numeriFiltrati = numeri.filter(function(n){
+        return n > 3 
+    })
+    console.log(numeriFiltrati);
+
+    //Find
+    //Restituisce il primo valore trovato [non un array]
+    let numeriTrovato  = numeri.find(function(n){
+            return n > 3 
+        })
+        console.log(numeriTrovato);
+
+
+    //Reduce
+    numeri = [1,2,3,4,5,6];
+    let soma = numeri.reduce(function(p,c){
+        return p + c;
+    })
+    console.log(somma);
+
+    numeri = [1,20,300,4,5,6];
+    let numeroGrande = numeri.reduce(function(p,c){
+        if (p + c){
+            return p;
+        } else{
+            return c;
+        }
+    })
+    console.log(numeroGrande);
+
+
+    //Eliminari da un array
+
+    let pizza = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+
+    pizza = pizza.filter(function(p){
+        return p != 'Mimosa';
+    })
+    console.log(pizza);
+
+    //Eliminari diretta 
+
+    let pizz = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];    
+    let indice = pizz.indexOf('Marinara'); // Trova la Marinara e mi dice il sou indice(posizione)
+
+    pizz.splice(indice, 3); //Elimino la pizza Marinara
+    console.log(pizz);
+
+    // Eliminazione da Array di oggeti
+    pizzes = [
+        {
+            gusto : 'Margherita',
+            prezzo: 5,
+            disponibile: true
+        },
+        {
+            gusto : 'Diavola',
+            prezzo: 1,
+            disponibile: true
+        },
+        {
+            gusto : 'Hawayana',
+            prezzo: 500,
+            disponibile: true
+        }
+    ];
+
+        let index = pizzes.findIndex(function(p){
+            return !p.disponibile 
+        })
+
+        console.log(index);
+        
+        pizzes.splice(index,1); //elimino la pizza
+        console.log(pizze);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
