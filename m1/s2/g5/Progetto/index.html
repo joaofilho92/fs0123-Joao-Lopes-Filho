@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso Web Developer - Epicode school</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="//db.onlinewebfonts.com/c/e523b53c9376c84a6de09219be8a8842?family=Microgramma" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <!-- Global -->
+    <div class="calcolatrice">
+        <!-- Header -->
+        <div>
+            <h1 class="header">La mia prima calcolatrice in <span class="js">JavaScript</span></h1>
+        </div>
+        <!-- Intestazione della calcolatrice -->
+        <div class="title">CASIO©  Epicode</div>
+        <!-- Display della calcolatrice -->
+        <div id="output"></div>
+        <!-- Tasti della calcolatrice -->
+        <button class="button" style="background-color: rgb(5, 172, 33);" onclick="deleteOutput()">AC</button> <!-- Ho fatto il cambio di colore in linea in modo che si distinguesse dagli altri, ma so che non è il modo più adatto! -->
+        <button class="button" onclick="writeToOutput('/')">&divide;</button>
+        <button onclick="writeToOutput('1')">1</button>
+        <button onclick="writeToOutput('2')">2</button>
+        <button onclick="writeToOutput('3')">3</button>
+        <button class="button" onclick="writeToOutput('*')">&times;</button>
+        <button onclick="writeToOutput('4')">4</button>
+        <button onclick="writeToOutput('5')">5</button>
+        <button onclick="writeToOutput('6')">6</button>
+        <button class="button" onclick="writeToOutput('-')">&minus;</button>
+        <button onclick="writeToOutput('7')">7</button>
+        <button onclick="writeToOutput('8')">8</button>
+        <button onclick="writeToOutput('9')">9</button>
+        <button class="button" onclick="writeToOutput('+')">&plus;</button>
+        <button onclick="writeToOutput('0')">0</button>
+        <button style="background-color: orange;" onclick="showResults()">&equals;</button>
+      </div>
+      <!-- JavaScript + Attività extra -->
+      <div class="flipper">
+        <h1>Ti piacerebbe vedere qualcosa di veramente figo?</h1>
+        <div class = "btn2">
+        <button id="btn">click here!</button>
+        </div>
+      </div>
+      <script src="./assets/js/script.js"></script>
+    </body>
+  </html>

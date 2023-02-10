@@ -1,0 +1,103 @@
+@import url(//db.onlinewebfonts.com/c/e523b53c9376c84a6de09219be8a8842?family=Microgramma);
+@font-face {font-family: "Microgramma"; src: url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.eot"); 
+    src: url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.ttf") 
+    format("truetype"), url("//db.onlinewebfonts.com/t/e523b53c9376c84a6de09219be8a8842.svg#Microgramma")
+    format("svg"); }
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'Microgramma', sans-serif;
+        font-weight: normal;
+      }
+
+    body {
+        margin: 0;
+        padding: 50px;
+    } 
+    .header{
+        padding: 1px;
+        height: 13vh;
+        color: rgb(0, 0, 0);
+        font-family: Microgramma, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .calcolatrice {
+        margin: 1vh auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 274px;
+        border-radius: 4px;
+    }
+    .title {
+        font-family: 'Microgramma', sans-serif;
+        font-size: 0.9rem;
+        color: white;
+        padding: 5px;
+        background-color: rgb(75, 78, 78);
+        width: 100%;
+        text-align: left;
+        border-bottom: 15px solid  rgb(75, 78, 78);
+    }
+    button {
+        flex: 1 0 60px;
+        border: none;
+        background-color: rgb(57, 59, 59);
+        color: rgb(238, 238, 238);
+        border: 1px solid rgb(41, 39, 39);
+        font-size: 1.8rem;
+    }
+    button:hover {
+        transform: scale(1.02);
+        border: none;
+        background-color: rgb(36, 35, 35);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+        z-index: 1;   
+    }
+    .js{
+        color: rgb(224, 224, 1);
+    }
+    button:nth-of-type(1) {
+        flex-basis: 197px;
+    }
+    button:nth-of-type(16) {
+        flex-basis: 60px;
+    }
+    button:nth-of-type(17) {
+        flex-basis: 128px;
+    }
+    #output {
+        width: 100%;
+        padding: 12px;
+        background-color: rgb(187, 187, 187);
+        font-family: 'Microgramma', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.8rem;
+        height: 56px;
+        border-top: 1px solid rgb(5, 168, 155);
+        border-bottom: 1px solid rgb(5, 168, 155);
+    }
+    .flipper{
+        text-align: center;
+        top: 0;
+        left: 0;
+        font-family: Microgramma, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        padding: 14px;
+        bottom: 100rem;
+    }
+    #btn{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-size: 1.8rem;
+        
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+    .btn2{
+        padding: 25px;
+    }
