@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        function saluto(){
+            console.log('ciao');
+        }
+
+        saluto();
+        saluto();
+
+        function restituisciSaluto(){
+            return 'Benvenuto';
+        }
+
+        let dato = restituisciSaluto() 
+        console.log(dato);
+
+        //Funzioni parametriche
+        function somma(a, b){
+            console.log(a + b);
+        }
+
+        soma(2,8)
+        soma()// il parametri non valorizzati, saranno impostati come undefined
+
+        //festione dei parametri mancanti
+
+        function sommaPlus(a,b,c){
+            let num = 0;
+            if(a){//se ah un valore a questo è maggiore di zero
+                num +=  a;
+            }
+            if(b){
+                num += b;
+            }
+            if(c){
+                num += c;
+            }
+
+            console.log(num);
+        }
+
+        somaPlus(2,4)
+        somaPlus(2,4,6)
+
+
+        //imposto un valore di default ai parametri
+        function sommaPlusDeDefault(a = 0,b = 0,c = 0){
+           console.log(a + b + c);
+        }
+
+        sommaPlusDeDefault(2,4)
+        sommaPlusDeDefault(2,4,6)
+
+
+        //clousures
+
+        function closure(){
+            let numero = 10;
+            function fnfiglia(){
+                let x = 0;// variabile non leggibile dalla funzione clousure ()
+                return numero * 2
+            }
+
+            return fnfiglia();
+        }
+        console.log(clousure());
+
+
+        //self involking function
+        (function() {
+            console.log('auto invocata');
+        })
+
+        let d = (function(){
+            return 'Valore restituito della funzione auto invocata';
+        })
+
+        console.log(d);
+
+        //funzione freccia 
+
+        let nomeDelaFunzione = () =>{
+            console.log('Funzione freccia eseguita');
+        }
+
+        nomeFunzione();
+
+        //PEGADINHA PROVA DE SEXTA FEIRA ATENÇÃO
+        //in mancante di parentesi graffe il return à implicito 
+        //con un solo parametro le tonde sono facultative 
+        let grassetto = (stringa) => ´<b>$(stringa)</b>´;
+        //senza le graffe posso strutturare sono funzione oneline
+        
+        //Con più di un parametro le tonde sono obligatorie 
+        let sommaFreccia = (a,b) => a + b;
+        console.log( sommaFreccia(3,70));
+
+
+        //spread operator sulle funzione 
+
+        let sommaProUltra = (...numeri) => numeri.reduce((p,c) => p + c);
+            console.log(sommaProUltra(1,50,90,700,5));
+
+
+
+    </script>
+
+
+</body>
+</html>
