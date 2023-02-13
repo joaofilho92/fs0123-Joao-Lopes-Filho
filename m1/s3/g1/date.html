@@ -32,9 +32,12 @@
 
 
         console.log(adesso);
-        
-        console.log(adesso.toLocaleDateString());
 
+        const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+
+        console.log(adesso.toLocaleDateString('it-IT', options));
+
+        // consiglio la libreria moment.js per app che fanno ampio utilizo di date e orari
 
     </script>
 
